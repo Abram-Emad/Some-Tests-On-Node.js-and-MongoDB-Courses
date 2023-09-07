@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+    <h1>Our Newsletter</h1>
+    <form action="/" method="POST">
+        <div class="inputbox">
+            <input type="text" name="name" placeholder="name">
+            <span>Name</span>
+        </div>
+    <div class="inputbox">
+        <input type="text" name="age" placeholder="age">
+        <span>Age</span>
+    </div>
+    <div class="inputbox">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+    <% for (let appDb of users) { %>
+        <li>
+            <%= appDb.name %> : <%= appDb.age %>
+        </li>
+    <% } %>
+    </div>
+</body>
